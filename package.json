@@ -1,0 +1,42 @@
+{
+  "name": "com.fenikkel.simple-tween",
+  "displayName": "Simple Tween",
+  "description": "The simplest tween of all version 3 updated",
+  "version": "1.0.2",
+  "unity": "2019.4",
+  "unityRelease": "37f1",
+  "keywords": [
+    "color",
+    "fade",
+    "tween",
+    "fenikkel",
+    "interpolation"
+  ],
+  "homepage": "https://github.com/3d-group/unity-package-template.git",
+  "bugs": {
+    "url": "https://github.com/3d-group/unity-package-template/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:Fenikkel/SimpleTween.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name" : "Fenikkel",
+    "email" : "paufenollosa@gmail.com",
+    "url" : "https://fenikkel.github.io/PauFenollosa/"
+ },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "//": "In dependencies, you say the minimum version that the package can work with, if it's avaliable a higher version, it will use that one",
+
+  "type": "library",
+  "dependencies": {
+    "com.unity.textmeshpro": "2.1.6"
+  },
+  "documentationUrl": "https://github.com/Fenikkel/SimpleTween/tree/main/Documentation%7E",
+  "changelogUrl": "https://github.com/Fenikkel/SimpleTween/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/Fenikkel/SimpleTween/blob/main/LICENSE.md"
+}
