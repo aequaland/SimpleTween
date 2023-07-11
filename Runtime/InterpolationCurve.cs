@@ -6,6 +6,8 @@ public enum Interpolation
 {
     Linear,
     EaseInOut,
+    EaseInQuad,
+    EaseOutQuad,
     EaseOutBounce
 
 }
@@ -32,8 +34,15 @@ public static class InterpolationCurve
             case Interpolation.EaseInOut:
                 return EaseInOut(step);            
             
+            case Interpolation.EaseInQuad:
+                return EaseInQuad(step);
+
+            case Interpolation.EaseOutQuad:
+                return EaseOutQuad(step);
+
             case Interpolation.EaseOutBounce:
                 return EaseOutBounce(step);
+
 
             default:
                 Debug.LogWarning("Type not implemented");
@@ -49,6 +58,16 @@ public static class InterpolationCurve
     private static float EaseInOut(float step)
     {
         return -(Mathf.Cos(Mathf.PI * step) - 1.0f) / 2.0f;      
+    }
+
+    private static float EaseInQuad(float step)
+    {
+        return step * step;
+    }
+
+    private static float EaseOutQuad(float step) 
+    {
+        return 1 - (1 - step) * (1 - step);
     }
 
     private static float EaseOutBounce(float step)
